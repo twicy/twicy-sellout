@@ -1,7 +1,1 @@
-# twicy-sellout
-The last block:
-
-vgg_BN.load_state_dict(torch.load('./weights/MiniVGG-BN.pth'))
-test(vgg_BN, dataloaders['test'])
-
-is not working
+In this work, we build and train a convolutional neural network for deepfake recognition. To achieve this goal, we obtain our data set from a StyleGan based deepfake image generating website, \url{Which face is real? http://www.whichfaceisreal.com/}[3]. We further test with 4 models, VGG, VGG-BN, Meso4 and Meso4Inception. We evaluated these models, and the test demonstrate a successful detecting rate with more than 80\% for VGG-BN and Meso4. 
